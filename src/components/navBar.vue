@@ -1,23 +1,27 @@
 <template>
-  <div class="home">
-<section>
-  <div class="title"><span>Adrian Begic</span><span>Designer and<a target="" >Web Developer</a></span></div>
-</section>
-  </div>
+  <nav>
+  <ul>
+    <li><a>Home</a></li>
+    <li>About me</li>
+    <li>Portfolio</li>
+    <li>Contact me</li>
+    <li class="slide"></li>
+  </ul>
+</nav>
 </template>
 
 <script>
-
-
 export default {
-  name: 'Home',
-  components: {
+  name: 'navBar',
+  props: {
+    msg: String
   }
 }
 </script>
 
-<style scoped lang="css">
-  a {
+
+<style scoped lang="scss">
+a {
     color: inherit;
     text-decoration: inherit;
   }
