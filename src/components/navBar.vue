@@ -1,9 +1,9 @@
 <template>
   <nav>
   <ul>
-    <li><a>Home</a></li>
+    <li><router-link :to = "'/'">Home</router-link></li>
     <li>About me</li>
-    <li>Portfolio</li>
+    <li><router-link :to = "'/portfolio'">Portfolio</router-link></li>
     <li>Contact me</li>
     <li class="slide"></li>
   </ul>
