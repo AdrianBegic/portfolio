@@ -28,7 +28,7 @@ export default {
     font-family: 'Open Sans', sans-serif;
   }
   ::selection {
-    background-color: #f7ca18;
+    background-color: yellow;
     color: #1b1b1b;
   }
   nav {
@@ -76,7 +76,7 @@ export default {
     left: 0;
     width: 20vw;
     height: 2px;
-    background-color: #f7ca18;
+    background-color: yellow;
   }
   nav li:nth-child(1) {
     animation: pop 0.5s 0.15s 1 forwards;
@@ -171,12 +171,12 @@ export default {
     display: inline-block;
     margin-left: 0.5rem;
     text-decoration: none;
-    color: #f7ca18;
+    color: yellow;
   }
   section .title span a::after {
     content: "";
     height: 2px;
-    background-color: #f7ca18;
+    background-color: yellow;
     position: absolute;
     bottom: -10px;
     left: 0;

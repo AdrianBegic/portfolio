@@ -15,8 +15,7 @@
                 <img src="../assets/images/paradign_roofing.png" alt="" />
               </div>
               <figcaption>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                <span class="credit">Photo: Tim Marshall</span>
+                A simple but sleek website for roofing company
               </figcaption>
             </figure>
           </li>
@@ -26,8 +25,8 @@
                 <img src="../assets/images/simracer.png" alt="" />
               </div>
               <figcaption>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                <span class="credit">Photo: Christian Joudrey</span>
+                Sim racing
+                <span class="credit"></span>
               </figcaption>
             </figure>
           </li>
@@ -37,8 +36,8 @@
                 <img src="../assets/images/nobii.png" alt="" />
               </div>
               <figcaption>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                <span class="credit">Photo: Steve Carter</span>
+                Ecommerce store for unsual but sleek and modern houseware
+                <span class="credit">WooCommerce</span>
               </figcaption>
             </figure>
           </li>
@@ -48,8 +47,8 @@
                 <img src="../assets/images/freedom_surplus.png" alt="" />
               </div>
               <figcaption>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                <span class="credit">Photo: Aleksandra Boguslawska</span>
+                Ecommerce store selling all your political needs
+                <span class="credit">WooCommerce</span>
               </figcaption>
             </figure>
           </li>
@@ -59,8 +58,8 @@
                 <img src="https://iili.io/Ele4ff.gif" alt="" />
               </div>
               <figcaption>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                <span class="credit">Photo: Rosan Harmens</span>
+                Develop and deployt custom UI Vue components as NPM packages, with several packages hitting 300 weekly downloads
+                <span class="credit">NPM Vue.Js Nuxt Node.JS</span>
               </figcaption>
             </figure>
           </li>
@@ -70,8 +69,8 @@
                 <img src="../assets/images/snowday.png" alt="" />
               </div>
               <figcaption>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                <span class="credit">Photo: Annie Spratt</span>
+                A simple tool using backend calculating to deliver the most accurate prediction ofr a snowday in your area
+                <span class="credit"></span>
               </figcaption>
             </figure>
           </li>
@@ -152,15 +151,14 @@ computed:{
 // Styling
 
 section {
-  background: #000;
-  padding: 50px 0;
-  
+  height: 90vh;
+ 
 }
 
 .container {
   max-width: 1044px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 30px 20px;
 }
 
 .carousel {
@@ -212,21 +210,27 @@ section {
 
     &:nth-of-type(1):checked ~ .carousel__thumbnails li:nth-of-type(1) {
       box-shadow: 0px 0px 0px 5px yellow;
+      border-radius: 2%;
     }
     &:nth-of-type(2):checked ~ .carousel__thumbnails li:nth-of-type(2) {
       box-shadow: 0px 0px 0px 5px yellow;
+      border-radius: 2%;
     }
     &:nth-of-type(3):checked ~ .carousel__thumbnails li:nth-of-type(3) {
       box-shadow: 0px 0px 0px 5px yellow;
+      border-radius: 2%;
     }
     &:nth-of-type(4):checked ~ .carousel__thumbnails li:nth-of-type(4) {
       box-shadow: 0px 0px 0px 5px yellow;
+      border-radius: 2%;
     }
     &:nth-of-type(5):checked ~ .carousel__thumbnails li:nth-of-type(5) {
       box-shadow: 0px 0px 0px 5px yellow;
+      border-radius: 2%;
     }
     &:nth-of-type(6):checked ~ .carousel__thumbnails li:nth-of-type(6) {
       box-shadow: 0px 0px 0px 5px yellow;
+      border-radius: 2%;
     }
   }
 }
@@ -268,6 +272,7 @@ section {
     display: block;
     flex: 1 1 auto;
     object-fit: cover;
+    border-radius: 2%;
   }
 
   figcaption {
@@ -276,13 +281,25 @@ section {
     flex: 0 0 auto;
     width: 25%;
     min-width: 150px;
-    color: #fff;
+    color: yellow;
+    text-transform: uppercase;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+text-transform: uppercase;
+letter-spacing: 4px;
+font-weight: 800;
   }
 
   .credit {
     margin-top: 1rem;
-    color: #fff;
+    color: yellow;
     display: block;
+    text-transform: uppercase;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+text-transform: uppercase;
+letter-spacing: 4px;
+font-weight: 800;
   }
 
   &.scrollable {
@@ -329,6 +346,7 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 2%;
   }
 }
 </style>

@@ -2,9 +2,9 @@
   <nav>
   <ul>
     <li><router-link :to = "'/'">Home</router-link></li>
-    <li>About me</li>
+    <li><router-link :to = "'/about'">About Me</router-link></li>
     <li><router-link :to = "'/portfolio'">Portfolio</router-link></li>
-    <li>Contact me</li>
+    <li><router-link :to = "'/contact'">Contact Me</router-link></li>
     <li class="slide"></li>
   </ul>
 </nav>
@@ -37,10 +37,10 @@ a {
   }
   nav {
     width: 100%;
-    background-color: #0b0b0b;
+    background-color: yellow;
     position: fixed;
     bottom: 0;
-    height: 100px;
+    height: 10vh;
     overflow: hidden;
   }
   nav ul {
@@ -60,7 +60,7 @@ a {
     line-height: 100px;
     width: 25vw;
     text-align: center;
-    color: #555;
+    color: #000;
     transition: background-color 0.5s 0.2s ease, color 0.3s ease;
     cursor: pointer;
     font-size: 12px;
@@ -104,7 +104,7 @@ a {
     animation: pop 0.5s 1.05s 1 forwards;
   }
   nav li:hover {
-    color: #ececec;
+    color: #666;
   }
   nav li:active {
     background-color: #222;
@@ -134,7 +134,7 @@ a {
     position: absolute;
     left: -25vw;
     top: 0;
-    background-color: #fff;
+    background-color: #666;
     z-index: -1;
     height: 2px;
     margin-top: 98px;

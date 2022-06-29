@@ -23,7 +23,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  background-color: #000;
+  background-image:url("./assets/images/pexels-photo-2456291.webp") ;
   margin: 0 auto;
   width: 100vw;
   height: 100vh;
