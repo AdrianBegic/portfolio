@@ -1,189 +1,334 @@
 <template>
-  <div class="cursor">
-  <div class="cursor__ball cursor__ball--big ">
-    <svg height="30" width="30">
-      <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
-    </svg>
-  </div>
-  
-  <div class="cursor__ball cursor__ball--small">
-    <svg height="10" width="10">
-      <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
-    </svg>
-  </div>
-</div>
-
-<div class="left">
-  <h1>Hello</h1>
-  <p>Check out this link:</p>
-  <a class="hoverable">Hover meh</a>  
-</div>
-
-<div class="right">
-  <h1>Hello</h1>
-  <p>Check out this link:</p>
-  <a class="hoverable">Hover meh</a>  
-</div>
+  <section onload="slide();">
+    <div class="container">
+      <div class="carousel">
+        <input type="radio" name="slides" checked="checked" id="slide-1" />
+        <input type="radio" name="slides" id="slide-2" />
+        <input type="radio" name="slides" id="slide-3" />
+        <input type="radio" name="slides" id="slide-4" />
+        <input type="radio" name="slides" id="slide-5" />
+        <input type="radio" name="slides" id="slide-6" />
+        <ul class="carousel__slides">
+          <li class="carousel__slide">
+            <figure>
+              <div>
+                <img src="../assets/images/paradign_roofing.png" alt="" />
+              </div>
+              <figcaption>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <span class="credit">Photo: Tim Marshall</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="carousel__slide">
+            <figure>
+              <div>
+                <img src="../assets/images/simracer.png" alt="" />
+              </div>
+              <figcaption>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <span class="credit">Photo: Christian Joudrey</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="carousel__slide">
+            <figure>
+              <div>
+                <img src="../assets/images/nobii.png" alt="" />
+              </div>
+              <figcaption>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <span class="credit">Photo: Steve Carter</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="carousel__slide">
+            <figure>
+              <div>
+                <img src="../assets/images/freedom_surplus.png" alt="" />
+              </div>
+              <figcaption>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <span class="credit">Photo: Aleksandra Boguslawska</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="carousel__slide">
+            <figure>
+              <div>
+                <img src="https://iili.io/Ele4ff.gif" alt="" />
+              </div>
+              <figcaption>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <span class="credit">Photo: Rosan Harmens</span>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="carousel__slide">
+            <figure>
+              <div>
+                <img src="../assets/images/snowday.png" alt="" />
+              </div>
+              <figcaption>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <span class="credit">Photo: Annie Spratt</span>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+        <ul class="carousel__thumbnails">
+          <li>
+            <label for="slide-1"
+              ><img src="../assets/images/paradign_roofing.png" alt=""
+            /></label>
+          </li>
+          <li>
+            <label for="slide-2"
+              ><img src="../assets/images/simracer.png" alt=""
+            /></label>
+          </li>
+          <li>
+            <label for="slide-3"
+              ><img src="../assets/images/nobii.png" alt=""
+            /></label>
+          </li>
+          <li>
+            <label for="slide-4"
+              ><img src="../assets/images/freedom_surplus.png" alt=""
+            /></label>
+          </li>
+          <li>
+            <label for="slide-5"
+              ><img src="../assets/images/npm_packages.webp" alt=""
+            /></label>
+          </li>
+          <li>
+            <label for="slide-6"
+              ><img src="../assets/images/snowday.png" alt=""
+            /></label>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
-export default{
+export default {
 
-methods: {
-  function() {
+computed:{
+  slide(){
+     setTimeout(function(){
+         document.getElementById('elementToMove').style.left = '1000px'; // new left position is 1000px in this example
+     }, 2000); // 2000 = 2 seconds after page load
+}
+}
 
-    var slidersContainer = document.querySelector('.sliders-container');
-
-    // Initializing the numbers slider
-    var msNumbers = new MomentumSlider({
-        el: slidersContainer,
-        cssClass: 'ms--numbers',
-        range: [1, 4],
-        rangeContent: function (i) {
-            return '0' + i;
-        },
-        style: {
-            transform: [{scale: [0.4, 1]}],
-            opacity: [0, 1]
-        },
-        interactive: false
-    });
-
-    // Initializing the titles slider
-    var titles = [
-        'King of the Ring Fight',
-        'Sound of Streets',
-        'Urban Fashion',
-        'Windy Sunset'
-    ];
-    var msTitles = new MomentumSlider({
-        el: slidersContainer,
-        cssClass: 'ms--titles',
-        range: [0, 3],
-        rangeContent: function (i) {
-            return '<h3>'+ titles[i] +'</h3>';
-        },
-        vertical: true,
-        reverse: true,
-        style: {
-            opacity: [0, 1]
-        },
-        interactive: false
-    });
-
-    // Initializing the links slider
-    var msLinks = new MomentumSlider({
-        el: slidersContainer,
-        cssClass: 'ms--links',
-        range: [0, 3],
-        rangeContent: function () {
-            return '<a class="ms-slide__link">View Case</a>';
-        },
-        vertical: true,
-        interactive: false
-    });
-
-    // Get pagination items
-    var pagination = document.querySelector('.pagination');
-    var paginationItems = [].slice.call(pagination.children);
-
-    // Initializing the images slider
-    var msImages = new MomentumSlider({
-        // Element to append the slider
-        el: slidersContainer,
-        // CSS class to reference the slider
-        cssClass: 'ms--images',
-        // Generate the 4 slides required
-        range: [0, 3],
-        rangeContent: function () {
-            return '<div class="ms-slide__image-container"><div class="ms-slide__image"></div></div>';
-        },
-        // Syncronize the other sliders
-        sync: [msNumbers, msTitles, msLinks],
-        // Styles to interpolate as we move the slider
-        style: {
-            '.ms-slide__image': {
-                transform: [{scale: [1.5, 1]}]
-            }
-        },
-        // Update pagination if slider change
-        change: function(newIndex, oldIndex) {
-            if (typeof oldIndex !== 'undefined') {
-                paginationItems[oldIndex].classList.remove('pagination__item--active');
-            }
-            paginationItems[newIndex].classList.add('pagination__item--active');
-        }
-    });
-
-    // Select corresponding slider item when a pagination button is clicked
-    pagination.addEventListener('click', function(e) {
-        if (e.target.matches('.pagination__button')) {
-            var index = paginationItems.indexOf(e.target.parentNode);
-            msImages.select(index);
-        }
-    });
-
-}}}
-
-
-
-
+};
 </script>
 
-
-
 <style scoped lang="scss">
- body {
-	height: 100vh;
-	background: #010101;
-	cursor: none;
-	margin: 0;
-	display: flex;
-	font-family: monospace;
-	a {
-		border-bottom: 2px solid #fff;
-		padding: 10px 0;
-		margin-top: 25px;
-	}
-	.cursor {
-		pointer-events: none;
-	}
-	.cursor__ball {
-		position: fixed;
-		top: 0;
-		left: 0;
-		mix-blend-mode: difference;
-		z-index: 1000;
-		circle {
-			fill: #f7f8fa;
-		}
-	}
-	.right {
-		background: #fff;
-		a {
-			border-bottom: 2px solid #000;
-		}
-	}
-}
-body h1,
-body p,
-body a {
-	color: #fff;
-}
-body .left,
-body .right {
-	height: 100%;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-body .right h1,
-body .right p,
-body .right a {
-	color: #000;
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+
+  &:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: ($height / $width) * 100%;
+  }
+
+  > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
+// Styling
 
+section {
+  background: #000;
+  padding: 50px 0;
+  
+}
+
+.container {
+  max-width: 1044px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.carousel {
+  display: block;
+  text-align: left;
+  position: relative;
+  margin-bottom: 22px;
+
+  > input {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+
+    &:nth-of-type(6):checked
+      ~ .carousel__slides
+      .carousel__slide:first-of-type {
+      margin-left: -500%;
+    }
+    &:nth-of-type(5):checked
+      ~ .carousel__slides
+      .carousel__slide:first-of-type {
+      margin-left: -400%;
+    }
+    &:nth-of-type(4):checked
+      ~ .carousel__slides
+      .carousel__slide:first-of-type {
+      margin-left: -300%;
+    }
+    &:nth-of-type(3):checked
+      ~ .carousel__slides
+      .carousel__slide:first-of-type {
+      margin-left: -200%;
+    }
+    &:nth-of-type(2):checked
+      ~ .carousel__slides
+      .carousel__slide:first-of-type {
+      margin-left: -100%;
+    }
+    &:nth-of-type(1):checked
+      ~ .carousel__slides
+      .carousel__slide:first-of-type {
+      margin-left: 0%;
+    }
+
+    &:nth-of-type(1):checked ~ .carousel__thumbnails li:nth-of-type(1) {
+      box-shadow: 0px 0px 0px 5px yellow;
+    }
+    &:nth-of-type(2):checked ~ .carousel__thumbnails li:nth-of-type(2) {
+      box-shadow: 0px 0px 0px 5px yellow;
+    }
+    &:nth-of-type(3):checked ~ .carousel__thumbnails li:nth-of-type(3) {
+      box-shadow: 0px 0px 0px 5px yellow;
+    }
+    &:nth-of-type(4):checked ~ .carousel__thumbnails li:nth-of-type(4) {
+      box-shadow: 0px 0px 0px 5px yellow;
+    }
+    &:nth-of-type(5):checked ~ .carousel__thumbnails li:nth-of-type(5) {
+      box-shadow: 0px 0px 0px 5px yellow;
+    }
+    &:nth-of-type(6):checked ~ .carousel__thumbnails li:nth-of-type(6) {
+      box-shadow: 0px 0px 0px 5px yellow;
+    }
+  }
+}
+
+.carousel__slides {
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.carousel__slide {
+  position: relative;
+  display: block;
+  flex: 1 0 100%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 300ms ease-out;
+  vertical-align: top;
+  box-sizing: border-box;
+  white-space: normal;
+
+  figure {
+    display: flex;
+    margin: 0;
+  }
+
+  div {
+    @include aspect-ratio(3, 2);
+    width: 100%;
+  }
+
+  img {
+    display: block;
+    flex: 1 1 auto;
+    object-fit: cover;
+  }
+
+  figcaption {
+    align-self: flex-end;
+    padding: 20px 20px 0 20px;
+    flex: 0 0 auto;
+    width: 25%;
+    min-width: 150px;
+    color: #fff;
+  }
+
+  .credit {
+    margin-top: 1rem;
+    color: #fff;
+    display: block;
+  }
+
+  &.scrollable {
+    overflow-y: scroll;
+  }
+}
+
+.carousel__thumbnails {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+
+  margin: 0 -10px;
+
+  .carousel__slides + & {
+    margin-top: 20px;
+  }
+
+  li {
+    flex: 1 1 auto;
+    max-width: calc((100% / 6) - 20px);
+    margin: 0 10px;
+    transition: all 300ms ease-in-out;
+  }
+
+  label {
+    display: block;
+    @include aspect-ratio(1, 1);
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+
+      img {
+        box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
+        transition: all 300ms ease-in-out;
+      }
+    }
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
 </style>

@@ -1,17 +1,20 @@
 <template>
-  <router-view/>
-  <navBar/>
+  <router-view v-slot="{ Component }">
+    <transition name="fade" mode="out-in">
+      <component :is="Component" />
+    </transition>
+  </router-view>
+  <navBar />
 </template>
 
-
 <script>
-import navBar from './components/navBar.vue'
+import navBar from "./components/navBar.vue";
 
 export default {
-  components:{
+  components: {
     navBar,
-  }
-}
+  },
+};
 </script>
 
 <style lang="scss">
@@ -20,13 +23,22 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+  background-color: #000;
   margin: 0 auto;
   width: 100vw;
   height: 100vh;
 }
 
-body{
+body {
   margin: 0 auto;
 }
 
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
 </style>

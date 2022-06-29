@@ -138,7 +138,7 @@ export default {
     transform: translateY(0);
   }
   section {
-    background-color: #1b1b1b;
+    background-color: #000;
     height: 100vh;
     display: flex;
   }
