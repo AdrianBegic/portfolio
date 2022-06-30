@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2ceaab4785783e015547",
-    "url": "/portfolio/css/app.8de7b2cb.css"
+    "revision": "15ceb80590cb8eaa955e",
+    "url": "/portfolio/css/app.3054575e.css"
   },
   {
     "revision": "e9ac004a3b6e5eb133a506bf52a756f4",
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/img/nobii.d9f1f0a8.png"
   },
   {
-    "revision": "4e14d126b1c50b99742ed8961cf43681",
-    "url": "/portfolio/img/paradign_roofing.4e14d126.png"
+    "revision": "641a106b506c0dc64552b9d9adff0324",
+    "url": "/portfolio/img/paradign_roofing.641a106b.png"
   },
   {
     "revision": "f5a9a88a4f95a2a1c1eea1b062363770",
@@ -24,24 +24,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/img/prof.4f2edba8.jpg"
   },
   {
+    "revision": "b0159b90ee36d950888dbcee987d6c56",
+    "url": "/portfolio/img/resto.b0159b90.png"
+  },
+  {
+    "revision": "911a76fafcb493a34669ec1b8af3212d",
+    "url": "/portfolio/img/sig.911a76fa.png"
+  },
+  {
     "revision": "5d826d43fd55e0dd3643a508149098a6",
     "url": "/portfolio/img/simracer.5d826d43.png"
   },
   {
-    "revision": "2df8607e68cec6b624cd0d249cc44657",
-    "url": "/portfolio/img/snowday.2df8607e.png"
-  },
-  {
-    "revision": "fda464a01f84eb378350af9a4b3f4c99",
-    "url": "/portfolio/img/vue.fda464a0.png"
-  },
-  {
-    "revision": "efd55317628202ba96ff1d64ea3c3c65",
+    "revision": "08fa82a4a2e00bbdf2bdd464c3503d25",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "2ceaab4785783e015547",
-    "url": "/portfolio/js/app.d7b33266.js"
+    "revision": "15ceb80590cb8eaa955e",
+    "url": "/portfolio/js/app.38dbd93e.js"
   },
   {
     "revision": "f960b5baccce8c94d078",
