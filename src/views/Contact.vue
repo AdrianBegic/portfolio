@@ -101,10 +101,13 @@ header {
 }
 
 #form {
-  position: relative;
   width: 500px;
-  margin: 50px auto 100px auto;
-  top: 200px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 input {

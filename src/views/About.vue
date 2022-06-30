@@ -30,25 +30,7 @@ deliver the best possible experience to clients and customers.</div>
 
     </div>
 
-    <div class="profile-card-message js-message">
-      <form class="profile-card-form">
-        <div class="profile-card-form__container">
-          <textarea placeholder="Say something..."></textarea>
-        </div>
-
-        <div class="profile-card-form__bottom">
-          <button class="profile-card__button button--blue js-message-close">
-            Send
-          </button>
-
-          <button class="profile-card__button button--gray js-message-close">
-            Cancel
-          </button>
-        </div>
-      </form>
-
-      <div class="profile-card__overlay js-message-close"></div>
-    </div>
+    
 
   </div>
 
@@ -76,13 +58,17 @@ a, a:hover {
 .profile-card {
   width: 100%;
   min-height: 460px;
-  top: 200px;
   margin: auto;
   box-shadow: 0px 8px 60px -10px rgba(13,28,39,0.6);
   background: #fff;
   border-radius: 12px;
   max-width: 700px;
-  position: relative;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 
   &.active {
     .profile-card__cnt {

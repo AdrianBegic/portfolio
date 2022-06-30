@@ -55,10 +55,9 @@
           <li class="carousel__slide">
             <figure>
               <div>
-                <img src="https://iili.io/Ele4ff.gif" alt="" />
+                <img src="../assets/images/vue.png" alt="" />
               </div>
               <figcaption>
-                Develop and deployt custom UI Vue components as NPM packages, with several packages hitting 300 weekly downloads
                 <span class="credit">NPM Vue.Js Nuxt Node.JS</span>
               </figcaption>
             </figure>
@@ -74,6 +73,7 @@
               </figcaption>
             </figure>
           </li>
+          
         </ul>
         <ul class="carousel__thumbnails">
           <li>
@@ -98,7 +98,7 @@
           </li>
           <li>
             <label for="slide-5"
-              ><img src="../assets/images/npm_packages.webp" alt=""
+              ><img src="../assets/images/vue.png" alt=""
             /></label>
           </li>
           <li>
@@ -156,9 +156,15 @@ section {
 }
 
 .container {
-  max-width: 1044px;
+  max-width: 70vw;
   margin: 0 auto;
   padding: 30px 20px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .carousel {

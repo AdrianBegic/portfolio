@@ -1,10 +1,10 @@
 <template>
   <nav>
   <ul>
-    <li><router-link :to = "'/'">Home</router-link></li>
-    <li><router-link :to = "'/about'">About Me</router-link></li>
-    <li><router-link :to = "'/portfolio'">Portfolio</router-link></li>
-    <li><router-link :to = "'/contact'">Contact Me</router-link></li>
+    <router-link id="li" :to = "'/'">Home</router-link>
+    <router-link id="li" :to = "'/about'">About Me</router-link>
+    <router-link id="li" :to = "'/portfolio'">Portfolio</router-link>
+    <router-link id="li" :to = "'/contact'">Contact Me</router-link>
     <li class="slide"></li>
   </ul>
 </nav>
@@ -52,12 +52,12 @@ a {
     margin: 0;
     width: 100vw;
   }
-  nav li {
+  nav #li {
     margin: 0;
     display: inline-block;
     height: 98px;
     margin-bottom: 2px;
-    line-height: 100px;
+    line-height: 85px;
     width: 25vw;
     text-align: center;
     color: #000;
@@ -69,11 +69,11 @@ a {
     font-weight: 800;
     transform: translateY(100%);
   }
-  nav li.active {
+  nav #li.active {
     background-color: #151515;
     color: #efefef;
   }
-  nav li.active::after {
+  nav #li.active::after {
     content: "";
     position: absolute;
     bottom: -2px;
@@ -82,55 +82,52 @@ a {
     height: 2px;
     background-color: #f7ca18;
   }
-  nav li:nth-child(1) {
+  nav #li:nth-child(1) {
     animation: pop 0.5s 0.15s 1 forwards;
   }
-  nav li:nth-child(2) {
+  nav #li:nth-child(2) {
     animation: pop 0.5s 0.3s 1 forwards;
   }
-  nav li:nth-child(3) {
+  nav #li:nth-child(3) {
     animation: pop 0.5s 0.45s 1 forwards;
   }
-  nav li:nth-child(4) {
+  nav #li:nth-child(4) {
     animation: pop 0.5s 0.6s 1 forwards;
   }
-  nav li:nth-child(5) {
-    animation: pop 0.5s 0.75s 1 forwards;
-  }
-  nav li:nth-child(6) {
+  nav #li:nth-child(6) {
     animation: pop 0.5s 0.9s 1 forwards;
   }
-  nav li:nth-child(7) {
+  nav #li:nth-child(7) {
     animation: pop 0.5s 1.05s 1 forwards;
   }
-  nav li:hover {
+  nav #li:hover {
     color: #666;
   }
-  nav li:active {
+  nav #li:active {
     background-color: #222;
   }
-  nav li:nth-child(1):hover ~ .slide {
+  nav #li:nth-child(1):hover ~ .slide {
     left: 0;
   }
-  nav li:nth-child(2):hover ~ .slide {
+  nav #li:nth-child(2):hover ~ .slide {
     left: 25vw;
   }
-  nav li:nth-child(3):hover ~ .slide {
+  nav #li:nth-child(3):hover ~ .slide {
     left: 50vw;
   }
-  nav li:nth-child(4):hover ~ .slide {
+  nav #li:nth-child(4):hover ~ .slide {
     left: 75vw;
   }
-  nav li:nth-child(5):hover ~ .slide {
+  nav #li:nth-child(5):hover ~ .slide {
     left: 80vw;
   }
-  nav li:nth-child(6):hover ~ .slide {
+  nav #li:nth-child(6):hover ~ .slide {
     left: 100vw;
   }
-  nav li:nth-child(7):hover ~ .slide {
+  nav #li:nth-child(7):hover ~ .slide {
     left: 120vw;
   }
-  nav li.slide {
+  nav #li.slide {
     position: absolute;
     left: -25vw;
     top: 0;
