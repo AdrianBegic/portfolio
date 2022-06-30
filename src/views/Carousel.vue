@@ -12,21 +12,40 @@
           <li class="carousel__slide">
             <figure>
               <div>
-                <img src="../assets/images/paradign_roofing.png" alt="" />
+                <img src="../assets/images/simracer.png" alt="" />
               </div>
               <figcaption>
-                A simple but sleek website for roofing company
+                <span class="credit"></span>
               </figcaption>
             </figure>
           </li>
           <li class="carousel__slide">
             <figure>
               <div>
-                <img src="../assets/images/simracer.png" alt="" />
+                <img src="../assets/images/sig.png" alt="" />
               </div>
               <figcaption>
-                Sim racing
                 <span class="credit"></span>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="carousel__slide">
+            <figure>
+              <div>
+                <img src="../assets/images/resto.png" alt="" />
+              </div>
+              <figcaption>
+                <span class="credit"></span>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="carousel__slide">
+            <figure>
+              <div>
+                <img src="../assets/images/paradign_roofing.png" alt="" />
+              </div>
+              <figcaption>
+                
               </figcaption>
             </figure>
           </li>
@@ -36,8 +55,8 @@
                 <img src="../assets/images/nobii.png" alt="" />
               </div>
               <figcaption>
-                Ecommerce store for unsual but sleek and modern houseware
-                <span class="credit">WooCommerce</span>
+                
+                <span class="credit"></span>
               </figcaption>
             </figure>
           </li>
@@ -47,28 +66,7 @@
                 <img src="../assets/images/freedom_surplus.png" alt="" />
               </div>
               <figcaption>
-                Ecommerce store selling all your political needs
-                <span class="credit">WooCommerce</span>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="carousel__slide">
-            <figure>
-              <div>
-                <img src="../assets/images/vue.png" alt="" />
-              </div>
-              <figcaption>
-                <span class="credit">NPM Vue.Js Nuxt Node.JS</span>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="carousel__slide">
-            <figure>
-              <div>
-                <img src="../assets/images/snowday.png" alt="" />
-              </div>
-              <figcaption>
-                A simple tool using backend calculating to deliver the most accurate prediction ofr a snowday in your area
+               
                 <span class="credit"></span>
               </figcaption>
             </figure>
@@ -78,32 +76,32 @@
         <ul class="carousel__thumbnails">
           <li>
             <label for="slide-1"
-              ><img src="../assets/images/paradign_roofing.png" alt=""
-            /></label>
-          </li>
-          <li>
-            <label for="slide-2"
               ><img src="../assets/images/simracer.png" alt=""
             /></label>
           </li>
           <li>
+            <label for="slide-2"
+              ><img src="../assets/images/sig.png" alt=""
+            /></label>
+          </li>
+          <li>
             <label for="slide-3"
-              ><img src="../assets/images/nobii.png" alt=""
+              ><img src="../assets/images/resto.png" alt=""
             /></label>
           </li>
           <li>
             <label for="slide-4"
-              ><img src="../assets/images/freedom_surplus.png" alt=""
+              ><img src="../assets/images/paradign_roofing.png" alt=""
             /></label>
           </li>
           <li>
             <label for="slide-5"
-              ><img src="../assets/images/vue.png" alt=""
+              ><img src="../assets/images/nobii.png" alt=""
             /></label>
           </li>
           <li>
             <label for="slide-6"
-              ><img src="../assets/images/snowday.png" alt=""
+              ><img src="../assets/images/freedom_surplus.png" alt=""
             /></label>
           </li>
         </ul>
@@ -156,7 +154,7 @@ section {
 }
 
 .container {
-  max-width: 70vw;
+  max-width: 50vw;
   margin: 0 auto;
   padding: 30px 20px;
   margin: 0;

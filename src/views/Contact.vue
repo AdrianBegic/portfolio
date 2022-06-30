@@ -92,9 +92,12 @@ input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
 
 
 header {
-  position: relative;
+  position: absolute;
   color: yellow;
-  top: 200px;
+  top: 25%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-size: 2.3em;
   text-align: center;
   letter-spacing: 7px;
