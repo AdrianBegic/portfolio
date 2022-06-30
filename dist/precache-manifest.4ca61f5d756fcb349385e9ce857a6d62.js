@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "58254b420748f11bd790",
-    "url": "/portfolio/css/app.497e52b3.css"
+    "revision": "2ceaab4785783e015547",
+    "url": "/portfolio/css/app.8de7b2cb.css"
   },
   {
     "revision": "e9ac004a3b6e5eb133a506bf52a756f4",
@@ -10,10 +10,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d9f1f0a84dec24b5d81064659b1f090f",
     "url": "/portfolio/img/nobii.d9f1f0a8.png"
-  },
-  {
-    "revision": "f913019c227c7710585d52184489939d",
-    "url": "/portfolio/img/npm_packages.f913019c.webp"
   },
   {
     "revision": "4e14d126b1c50b99742ed8961cf43681",
@@ -36,12 +32,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/img/snowday.2df8607e.png"
   },
   {
-    "revision": "9a4d0606dace112a3c8d56c19ab81237",
+    "revision": "fda464a01f84eb378350af9a4b3f4c99",
+    "url": "/portfolio/img/vue.fda464a0.png"
+  },
+  {
+    "revision": "efd55317628202ba96ff1d64ea3c3c65",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "58254b420748f11bd790",
-    "url": "/portfolio/js/app.9346ca08.js"
+    "revision": "2ceaab4785783e015547",
+    "url": "/portfolio/js/app.d7b33266.js"
   },
   {
     "revision": "f960b5baccce8c94d078",
